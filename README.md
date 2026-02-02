@@ -49,26 +49,7 @@ I actively explore frontend, backend, and cloud technologies while strengthening
 
 ---
 
-## 📂 Project Structure
-portfolio-frontend/
-├── public/
-│ ├── profile.png
-│ ├── resume.pdf
-│ └── projects/
-│ ├── project1.png
-│ ├── project2.png
-│ └── project3.png
-├── src/
-│ ├── components/
-│ ├── Pages/
-│ ├── lib/
-│ ├── App.jsx
-│ └── main.jsx
-├── .env
-├── package.json
-└── vite.config.js
-
-## My View
+## My View ❤️
 
 - This portfolio represents my learning journey, hands-on experience, and continuous growth as a developer. I believe in building practical solutions, writing clean code, and improving through real-world projects. I’m always open to learning new technologies, collaborating with teams, and taking on challenging opportunities that help me grow as a professional.
 
