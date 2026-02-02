@@ -1,12 +1,75 @@
-# React + Vite
+# 🌐 Personal Portfolio Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive personal portfolio website built to showcase my skills, projects, experience, and achievements.  
+Includes a **fully working Contact Form powered by EmailJS with Gmail integration**, allowing visitors to contact me directly without a backend server.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Live Demo
 
-## Expanding the ESLint configuration
+- **Live Website:** https://domabharathi.vercel.app  
+ 
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 👩‍💻 About Me
+
+I’m **Bharathi D**, a Computer Science student and passionate Full-Stack Developer.  
+I enjoy building clean, user-friendly web applications and learning through real-world projects.  
+I actively explore frontend, backend, and cloud technologies while strengthening my problem-solving skills.
+
+---
+
+## 🛠️ Tech Stack
+
+### Frontend
+- React.js (Vite)
+- Tailwind CSS
+- Framer Motion (animations)
+- Lucide Icons
+
+### Email & Contact
+- EmailJS
+- Gmail API (Personal Service)
+
+### Tools & Platforms
+- Git & GitHub
+- Vercel (Frontend Deployment)
+
+---
+
+## ✨ Features
+
+- Fully responsive design (mobile, tablet, desktop)
+- Smooth animations and section transitions
+- Projects showcase with technology highlights
+- Experience & achievements sections
+- **Working contact form with Gmail delivery**
+- Clean and modern UI design
+
+---
+
+## 📂 Project Structure
+portfolio-frontend/
+├── public/
+│ ├── profile.png
+│ ├── resume.pdf
+│ └── projects/
+│ ├── project1.png
+│ ├── project2.png
+│ └── project3.png
+├── src/
+│ ├── components/
+│ ├── Pages/
+│ ├── lib/
+│ ├── App.jsx
+│ └── main.jsx
+├── .env
+├── package.json
+└── vite.config.js
+
+## My View
+
+- This portfolio represents my learning journey, hands-on experience, and continuous growth as a developer. I believe in building practical solutions, writing clean code, and improving through real-world projects. I’m always open to learning new technologies, collaborating with teams, and taking on challenging opportunities that help me grow as a professional.
+
+- This portfolio is more than just a collection of projects — it reflects my curiosity, dedication, and passion for technology. I enjoy learning by building, solving problems, and continuously pushing myself beyond my comfort zone. I’m excited to explore new challenges and contribute meaningfully to the tech industry.
