@@ -29,7 +29,7 @@ export const AboutSection = () => {
 <div className="flex justify-center">
   <div className="relative">
     <img
-      src="/profile.jpeg"
+      src="/profile.png"
       alt="Bharathi profile"
       className="
         w-64 h-64 rounded-full object-cover

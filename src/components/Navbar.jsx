@@ -84,12 +84,13 @@ export const Navbar = () => {
       <div className="container flex items-center justify-between">
         {/* Logo */}
         <a
-          className="text-xl font-bold flex items-center gap-1"
-          href="#hero"
-        >
-          <span className="text-primary">Bharathi</span>
-          <span className="text-foreground/80">D</span>
-        </a>
+  className="text-xl font-bold flex items-center"
+  href="#hero"
+>
+  <span className="text-primary tracking-tight">Bharathi</span>
+  <span className="ml-1 text-foreground/80 tracking-tight">D</span>
+</a>
+
 
         {/* Desktop Nav */}
         <div className="hidden md:flex space-x-8">

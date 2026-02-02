@@ -1,23 +1,19 @@
 import {
   Github,
-  Instagram,
   Linkedin,
   Mail,
   MapPin,
-  Phone,
   Send,
 } from "lucide-react";
 import { motion } from "framer-motion";
 import { cn } from "@/lib/utils";
 import { useState } from "react";
+import emailjs from "@emailjs/browser";
 
 const fadeUp = {
   hidden: { opacity: 0, y: 40 },
   visible: { opacity: 1, y: 0 },
 };
-
-const API_URL = `${import.meta.env.VITE_API_URL}/api/contact`;
-
 
 export const ContactSection = () => {
   const [formData, setFormData] = useState({
@@ -42,21 +38,23 @@ export const ContactSection = () => {
     setStatus(null);
 
     try {
-      const res = await fetch(API_URL, {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(formData),
-      });
-
-      const data = await res.json();
-      if (!res.ok) throw new Error(data.message);
+      await emailjs.send(
+        import.meta.env.VITE_EMAILJS_SERVICE_ID,
+        import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+        {
+          name: formData.name,
+          email: formData.email,
+          message: formData.message,
+        },
+        import.meta.env.VITE_EMAILJS_PUBLIC_KEY
+      );
 
       setStatus("success");
       setFormData({ name: "", email: "", message: "" });
 
-      // 🔥 auto-hide after 5s
       setTimeout(() => setStatus(null), 5000);
-    } catch (err) {
+    } catch (error) {
+      console.error(error);
       setStatus("error");
       setTimeout(() => setStatus(null), 5000);
     } finally {
@@ -71,9 +69,7 @@ export const ContactSection = () => {
           Get In <span className="text-primary">Touch</span>
         </h2>
 
-        {/* 🔥 SAME HEIGHT GRID */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-stretch">
-
           {/* LEFT */}
           <motion.div
             variants={fadeUp}
@@ -91,9 +87,12 @@ export const ContactSection = () => {
             </div>
 
             <div className="flex gap-4 pt-4">
-              <a href="https://www.linkedin.com" target="_blank"><Linkedin /></a>
-              <a href="https://github.com" target="_blank"><Github /></a>
-             
+              <a href="https://www.linkedin.com" target="_blank">
+                <Linkedin />
+              </a>
+              <a href="https://github.com" target="_blank">
+                <Github />
+              </a>
             </div>
           </motion.div>
 
@@ -138,12 +137,11 @@ export const ContactSection = () => {
                 className="w-full px-4 py-3 rounded-md border bg-background resize-none"
               />
 
-              {/* 🔥 BUTTON WITH STATUS */}
               <button
                 type="submit"
                 disabled={loading}
                 className={cn(
-                  "cosmic-button w-full flex items-center justify-center gap-2 transition-all",
+                  "cosmic-button w-full flex items-center justify-center gap-2",
                   loading && "opacity-70 cursor-not-allowed"
                 )}
               >
