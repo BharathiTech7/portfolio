@@ -22,6 +22,17 @@ const tagColors = {
 const projects = [
   {
     id: 1,
+    title: "SkillSwap",
+    description:
+      "A real-time collaborative learning platform where users can connect, schedule video sessions, complete task challenges, and track learning progress through a gamified experience with live chat and analytics.",
+    image: "/projects/project4.png",
+    tags: ["React", "Node.js", "MongoDB"],
+    demoUrl: "https://skillswap-connect.netlify.app/",
+    githubUrl: "https://github.com/BharathiTech7/skillswap-platform",
+  },
+
+  {
+    id: 2,
     title: "CalcCraft",
     description:
       "A simple yet interactive calculator built using HTML, CSS, and JavaScript. Implemented basic calculator functionalities such as addition, subtraction, multiplication, and division with a clean UI and responsive design.",
@@ -30,8 +41,9 @@ const projects = [
     demoUrl: "https://bharathitech7.github.io/CalcCraft/",
     githubUrl: "https://github.com/BharathiTech7/CalcCraft",
   },
+
   {
-    id: 2,
+    id: 3,
     title: "DocSpot",
     description:
       "A full-stack doctor appointment booking application where users can book appointments and upload medical reports, while doctors can approve appointments, view patient details, and access uploaded reports through a secure dashboard.",
@@ -41,8 +53,9 @@ const projects = [
     githubUrl:
       "https://github.com/BharathiTech7/DocSpot-Seamless-Appointment-Booking-for-Health",
   },
+
   {
-    id: 3,
+    id: 4,
     title: "CollegeChatBot",
     description:
       "A college enquiry chatbot developed for RGMCET that provides reliable information about the institution. Integrated with Gemini AI to handle different types of user queries and deliver accurate, context-aware responses.",
@@ -50,6 +63,39 @@ const projects = [
     tags: ["Python", "Flask", "ChatterBot"],
     demoUrl: "https://college-enquiry-chatbot-qgo6.onrender.com/",
     githubUrl: "https://github.com/BharathiTech7/College-Enquiry-Chatbot",
+  },
+
+  {
+    id: 5,
+    title: "Essenza",
+    description:
+      "A premium MERN stack perfume e-commerce platform featuring dynamic product filtering, responsive design, smooth animations, and a modern luxury-inspired shopping experience.",
+    image: "/projects/project5.png",
+    tags: ["React", "Node.js", "MongoDB"],
+    demoUrl: "https://essenza-shop.vercel.app",
+    githubUrl: "https://github.com/BharathiTech7/perfume-shop",
+  },
+
+  {
+    id: 6,
+    title: "Interactive Wall Calendar",
+    description:
+      "A high-fidelity interactive calendar built with React and Framer Motion featuring 3D page animations, date range selection, notes persistence, dynamic theming, and responsive design.",
+    image: "/projects/project6.png",
+    tags: ["React", "JavaScript", "CSS"],
+    demoUrl: "https://interactive-wallcalendar.netlify.app/",
+    githubUrl: "https://github.com/BharathiTech7/interactive-calendar",
+  },
+
+  {
+    id: 7,
+    title: "Interactive Question Sheet",
+    description:
+      "An interactive drag-and-drop DSA question tracker inspired by Codolio, featuring progress tracking, topic organization, dark mode, and responsive real-time UI interactions.",
+    image: "/projects/project7.png",
+    tags: ["React", "Node.js", "JavaScript"],
+    demoUrl: "https://interactive-question-sheet-six.vercel.app/",
+    githubUrl: "https://github.com/BharathiTech7/interactive-question-sheet",
   },
 ];
 
@@ -111,6 +157,7 @@ export const ProjectsSection = () => {
                   >
                     <ExternalLink size={20} />
                   </a>
+
                   <a
                     href={project.githubUrl}
                     target="_blank"

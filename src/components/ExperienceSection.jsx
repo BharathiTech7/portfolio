@@ -44,17 +44,17 @@ export const ExperienceSection = () => {
     {/* Date */}
     <div className="flex items-center gap-2 text-primary text-sm mb-3">
       <CalendarDays size={16} />
-      <span>Nov 27, 2025 – Present · 8 Weeks</span>
+      <span>Nov 24, 2025 – Jan 30, 2026 · 2 Months</span>
     </div>
 
     {/* Role */}
     <h3 className="text-xl md:text-2xl font-semibold text-foreground mb-1">
-      Software Development Intern
+      Java Fullstack developer intern
     </h3>
 
     {/* Company */}
     <p className="text-sm md:text-base text-primary/80 font-medium mb-4">
-      Infosys Springboard · Ongoing
+      Infosys Springboard 
     </p>
 
     {/* Points */}

@@ -52,8 +52,8 @@ const skillCards = [
     icon: <Database />,
     title: "Databases & APIs",
     items: [
-      "MongoDB, SQL (MySQL)",
-      "Mongoose",
+      "MongoDB",
+      "SQL (MySQL)",
       "RESTful APIs",
     ],
   },
@@ -64,7 +64,6 @@ const skillCards = [
       "Git, GitHub",
       "VS Code",
       "Netlify, Render",
-      "Agile Methodologies (Basics)",
     ],
   },
 ];
