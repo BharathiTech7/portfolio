@@ -33,17 +33,39 @@ const projects = [
 
   {
     id: 2,
-    title: "CalcCraft",
+    title: "CollegeChatBot",
     description:
-      "A simple yet interactive calculator built using HTML, CSS, and JavaScript. Implemented basic calculator functionalities such as addition, subtraction, multiplication, and division with a clean UI and responsive design.",
-    image: "/projects/project1.png",
-    tags: ["HTML", "CSS", "JavaScript"],
-    demoUrl: "https://bharathitech7.github.io/CalcCraft/",
-    githubUrl: "https://github.com/BharathiTech7/CalcCraft",
+      "A college enquiry chatbot developed for RGMCET that provides reliable information about the institution. Integrated with Gemini AI to handle different types of user queries and deliver accurate, context-aware responses.",
+    image: "/projects/project3.png",
+    tags: ["Python", "Flask", "ChatterBot"],
+    demoUrl: "https://college-enquiry-chatbot-qgo6.onrender.com/",
+    githubUrl: "https://github.com/BharathiTech7/College-Enquiry-Chatbot",
   },
 
   {
     id: 3,
+    title: "Essenza",
+    description:
+      "A premium MERN stack perfume e-commerce platform featuring dynamic product filtering, responsive design, smooth animations, and a modern luxury-inspired shopping experience.",
+    image: "/projects/project5.png",
+    tags: ["React", "Node.js", "MongoDB"],
+    demoUrl: "https://essenza-shop.vercel.app",
+    githubUrl: "https://github.com/BharathiTech7/perfume-shop",
+  },
+
+  {
+    id: 4,
+    title: "Interactive Wall Calendar",
+    description:
+      "A high-fidelity interactive calendar built with React and Framer Motion featuring 3D page animations, date range selection, notes persistence, dynamic theming, and responsive design.",
+    image: "/projects/project6.png",
+    tags: ["React", "JavaScript", "CSS"],
+    demoUrl: "https://interactive-wallcalendar.netlify.app/",
+    githubUrl: "https://github.com/BharathiTech7/interactive-calendar",
+  },
+
+  {
+    id: 5,
     title: "DocSpot",
     description:
       "A full-stack doctor appointment booking application where users can book appointments and upload medical reports, while doctors can approve appointments, view patient details, and access uploaded reports through a secure dashboard.",
@@ -55,36 +77,14 @@ const projects = [
   },
 
   {
-    id: 4,
-    title: "CollegeChatBot",
-    description:
-      "A college enquiry chatbot developed for RGMCET that provides reliable information about the institution. Integrated with Gemini AI to handle different types of user queries and deliver accurate, context-aware responses.",
-    image: "/projects/project3.png",
-    tags: ["Python", "Flask", "ChatterBot"],
-    demoUrl: "https://college-enquiry-chatbot-qgo6.onrender.com/",
-    githubUrl: "https://github.com/BharathiTech7/College-Enquiry-Chatbot",
-  },
-
-  {
-    id: 5,
-    title: "Essenza",
-    description:
-      "A premium MERN stack perfume e-commerce platform featuring dynamic product filtering, responsive design, smooth animations, and a modern luxury-inspired shopping experience.",
-    image: "/projects/project5.png",
-    tags: ["React", "Node.js", "MongoDB"],
-    demoUrl: "https://essenza-shop.vercel.app",
-    githubUrl: "https://github.com/BharathiTech7/perfume-shop",
-  },
-
-  {
     id: 6,
-    title: "Interactive Wall Calendar",
+    title: "CalcCraft",
     description:
-      "A high-fidelity interactive calendar built with React and Framer Motion featuring 3D page animations, date range selection, notes persistence, dynamic theming, and responsive design.",
-    image: "/projects/project6.png",
-    tags: ["React", "JavaScript", "CSS"],
-    demoUrl: "https://interactive-wallcalendar.netlify.app/",
-    githubUrl: "https://github.com/BharathiTech7/interactive-calendar",
+      "A simple yet interactive calculator built using HTML, CSS, and JavaScript. Implemented basic calculator functionalities such as addition, subtraction, multiplication, and division with a clean UI and responsive design.",
+    image: "/projects/project1.png",
+    tags: ["HTML", "CSS", "JavaScript"],
+    demoUrl: "https://bharathitech7.github.io/CalcCraft/",
+    githubUrl: "https://github.com/BharathiTech7/CalcCraft",
   },
 
   {
@@ -98,7 +98,6 @@ const projects = [
     githubUrl: "https://github.com/BharathiTech7/interactive-question-sheet",
   },
 ];
-
 export const ProjectsSection = () => {
   return (
     <section id="projects" className="py-24 px-4 relative">
