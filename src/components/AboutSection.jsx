@@ -29,7 +29,7 @@ const education = [
     school: "RGM College of Engineering & Technology, Nandyal",
     degree: "B.Tech, Computer Science and Engineering",
     detail: "CGPA 9.47 / 10",
-    period: "2023 – 2027",
+    period: "2023 – 2027(Expected)",
   },
   {
     school: "A.P Model School & Jr. College, Kurnool",
