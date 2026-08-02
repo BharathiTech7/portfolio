@@ -14,6 +14,7 @@ const navItems = [
 
   // ✅ NEW
   { name: "Achievements", href: "#achievements" },
+  { name: "Certifications", href: "#certifications" },
 
   { name: "Contact", href: "#contact" },
 ];
@@ -24,15 +25,16 @@ export const Navbar = () => {
   const [activeSection, setActiveSection] = useState("hero");
 
   // ✅ UPDATED to include new sections
-  const sectionIds = [
-    "hero",
-    "about",
-    "experience",   // NEW
-    "skills",
-    "projects",
-    "achievements", // NEW
-    "contact",
-  ];
+const sectionIds = [
+  "hero",
+  "about",
+  "experience",
+  "skills",
+  "projects",
+  "achievements",
+  "certifications",
+  "contact",
+];
 
   const observers = useRef([]);
 
@@ -87,8 +89,8 @@ export const Navbar = () => {
   className="text-xl font-bold flex items-center"
   href="#hero"
 >
-  <span className="text-primary tracking-tight">Bharathi</span>
-  <span className="ml-1 text-foreground/80 tracking-tight">D</span>
+  <span className="text-primary tracking-tight">D.</span>
+  <span className="ml-1 text-foreground/80 tracking-tight">Bharathi</span>
 </a>
 
 

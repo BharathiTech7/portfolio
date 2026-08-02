@@ -9,7 +9,7 @@ import { ContactSection } from "../components/ContactSection";
 import { Footer } from "../components/Footer";
 import { ExperienceSection } from "../components/ExperienceSection";
 import { AchievementsSection } from "../components/AchievementsSection";
-
+import { CertificationsSection } from "../components/CertificationsSection";
 export const Home=()=>{
     return <div className="min-h-screen bg-background text-foreground overflow-x-hidden">
         {/*Theme toggle*/}
@@ -25,8 +25,9 @@ export const Home=()=>{
              <ExperienceSection />
             <SkillsSection/>
             <ProjectsSection/>
+            
              <AchievementsSection />
-
+             <CertificationsSection />
             <ContactSection/>
          </main>
         {/* Footer*/ }

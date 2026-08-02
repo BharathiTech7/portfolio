@@ -1,69 +1,67 @@
 import {
   Code2,
   Database,
-  Layers,
+  Palette,
   Wrench,
-  Cpu,
-  BookOpen,
+  Server,
+  Binary,
 } from "lucide-react";
 import { motion } from "framer-motion";
 
 /* 🔹 DATA */
 const skillCards = [
   {
-    icon: <Layers />,
-    title: "MERN Stack",
-    items: [
-      "MongoDB (with Mongoose)",
-      "Express.js (Backend Framework)",
-      "React.js (Frontend Library)",
-      "Node.js (Runtime Environment)",
-    ],
-  },
-  {
     icon: <Code2 />,
-    title: "Programming Languages",
-    items: [
-      "Java (OOPs concepts)",
-      "JavaScript (ES6+)",
-      "Python (Basics)",
-      "C (Fundamentals)",
-    ],
+    title: "Languages",
+    items: ["Java", "JavaScript (ES6+)", "Python", "C"],
   },
   {
-    icon: <Cpu />,
-    title: "Data Structures & Algorithms",
+    icon: <Palette />,
+    title: "Frontend",
     items: [
-      "Problem Solving",
-      "Arrays",
-      "Linked Lists",
-    ],
-  },
-  {
-    icon: <BookOpen />,
-    title: "Frontend Technologies",
-    items: [
+      "React.js",
       "HTML5, CSS3",
       "Tailwind CSS",
       "Responsive Web Design",
     ],
   },
   {
-    icon: <Database />,
-    title: "Databases & APIs",
+    icon: <Server />,
+    title: "Backend & APIs",
     items: [
-      "MongoDB",
-      "SQL (MySQL)",
+      "Node.js, Express.js",
+      "Spring Boot",
+
       "RESTful APIs",
+      "JWT Authentication",
+      "WebSockets (Socket.io)",
     ],
   },
   {
+    icon: <Database />,
+    title: "Databases",
+    items: ["MongoDB", "Mongoose (ODM)", "MySQL"],
+  },
+  {
     icon: <Wrench />,
-    title: "Tools & Platforms",
+    title: "Tools & Deployment",
     items: [
       "Git, GitHub",
+      "Postman",
+      "npm",
       "VS Code",
-      "Netlify, Render",
+      "Netlify, Render, Vercel",
+    ],
+  },
+  {
+    icon: <Binary />,
+    title: "Core CS",
+    items: [
+      "DSA — 200+ problems in Java",
+      "Object-Oriented Programming",
+      "DBMS",
+      "Operating Systems",
+      "Computer Networks",
     ],
   },
 ];
@@ -87,17 +85,13 @@ const cardVariants = {
 
 export const SkillsSection = () => {
   return (
-    <section
-      id="skills"
-      className="py-24 px-4 relative bg-secondary/30"
-    >
+    <section id="skills" className="py-24 px-4 relative bg-secondary/30">
       <div className="container mx-auto max-w-6xl">
         <h2 className="text-3xl md:text-4xl font-bold mb-16 text-center">
           My <span className="text-primary">Skills</span>
         </h2>
 
-        {/* 🔥 RE-ENTER ANIMATION */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 items-stretch">
           {skillCards.map((card, index) => (
             <motion.div
               key={card.title}
@@ -109,6 +103,7 @@ export const SkillsSection = () => {
                 once: false,
                 amount: 0.3,
               }}
+              className="h-full"
             >
               <SkillCard
                 icon={card.icon}
@@ -128,7 +123,7 @@ const SkillCard = ({ icon, title, items }) => {
   return (
     <div
       className="
-        group relative rounded-2xl p-6
+        group relative h-full rounded-2xl p-6
         bg-card/80 backdrop-blur
         border border-border/50
         shadow-sm
@@ -141,14 +136,12 @@ const SkillCard = ({ icon, title, items }) => {
         {icon}
       </div>
 
-      <h3 className="text-xl font-semibold mb-4">
-        {title}
-      </h3>
+      <h3 className="text-xl font-semibold mb-4">{title}</h3>
 
       <ul className="space-y-2 text-muted-foreground">
         {items.map((item) => (
           <li key={item} className="flex items-center gap-2">
-            <span className="h-1.5 w-1.5 rounded-full bg-primary/70" />
+            <span className="h-1.5 w-1.5 rounded-full bg-primary/70 shrink-0" />
             <span>{item}</span>
           </li>
         ))}
@@ -158,3 +151,4 @@ const SkillCard = ({ icon, title, items }) => {
     </div>
   );
 };
+
